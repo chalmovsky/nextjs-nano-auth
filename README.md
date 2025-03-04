@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Catalyst for new Next.js apps that need auth.
 
-## Getting Started
+### Fully functional email and password authentication including email verification.
+- This is meant to be used as starting point to add auth to a existing Next.js app.
+- Copy it to the existing project and adjust according to your needs.
 
-First, run the development server:
+### How to use:
+Download `nna-just-the-files.zip` copy and integrate the files into your own project.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+These are the files:
+- `.gitignore`
+- `.env`
+- `.env.local`
+- `drizzle.config.ts`
+- `package.json`
+- `./app/auth/sign-in/page.js`
+- `./app/auth/sign-out/page.js`
+- `./app/auth/sign-up/page.js`
+- `./app/auth/sign-up/[email]/page.js`
+- `./app/auth/sign-up/[email]/[verified]page.js`
+- `./app/auth/verify-email/route.js`
+- `./app/protected/page.js`
+- `./lib/auth.js`
+- `./lib/dal.js`
+- `./lib/email.js`
+- `./lib/EmailVerificationTeamplate.jsx`
+- `./lib/session.js`
+- `./lib/db/migrations`
+- `./lib/db/drizzle.js`
+- `./lib/db/schema.tex`
+- 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Made with:
 
-## Learn More
+- jose
+- drizzle
+- sqlite
+- resend for email sending
+- placeholder Sign In and Sign Up pages ready to be customized
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Planned improvements
+- Forgot password reset
+- Rate limiting based on IP
+- Adding cache where it makes sense
+- Add some example for authorization (e.g. adding credits to the users table and then only allowing certain action if there are enough credits)
+- An option to use custom, fully featured, beautifully styled Sign In and Sign Up components
