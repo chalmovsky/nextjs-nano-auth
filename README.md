@@ -4,6 +4,9 @@
 - This is meant to be used as starting point to add auth to a existing Next.js app.
 - Copy it to the existing project and adjust according to your needs.
 
+### Prerequisites:
+- Set up Resend account (if you dont have Resend you can swap it out for other email sender in `email.js`, but it's gonna be more work)
+
 ### How to use:
 Download `nna-just-the-files.zip` copy and integrate the files into your own project.
 
