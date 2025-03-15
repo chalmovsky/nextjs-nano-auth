@@ -49,7 +49,9 @@ These are the files:
 
 ### Planned improvements
 - Forgot password reset
-- Rate limiting based on IP
+- Rate limiting based on IP 
+- Rate limiting with a 3rd party provider
 - Adding cache where it makes sense
 - Add some example for authorization (e.g. adding credits to the users table and then only allowing certain action if there are enough credits)
 - An option to use custom, fully featured, beautifully styled Sign In and Sign Up components
+- Add a script that scaffold all of this more dynamically and conveniently 
